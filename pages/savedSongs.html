@@ -1,0 +1,80 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Saved Songs</title>
+    
+    </head>
+
+
+<body class="grey lighten-4">
+    <div class="app">
+        
+        <meta name="theme-color" content="#6a1b9a"/>
+    </div>
+
+<div class="practice container grey-text text-darken-4">
+
+   <header>
+<!---Navbar -->
+<nav class="purple darken-3">
+    <div class="nav-wrapper">
+        <a href="#!" class="brand-logo center">
+            <img src="../img/MyMusicAppLogo.png" aria-label="Take Note Music Practice App Logo" style="height: 60px;"></a>
+
+            <!-- Nav for large screens -->
+            <a href="#" class="sidenav-trigger white-text" data-target="mobile-demo"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="songList.html">Song List</a></li>
+                <li><a href="savedSongs.html">Saved Songs</a></li>
+                <li><a href="myStats.html">My Stats</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        </nav>  
+
+        <!-- Nav for small and medium screens -->
+        <ul class="sidenav" id="mobile-demo">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="songList.html">Song List</a></li>
+          <li><a href="savedSongs.html">Saved Songs</a></li>
+          <li><a href="myStats.html">My Stats</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+          
+    </header>
+        <!-- Saved Song Section -->
+
+ <section id="saved-songs" class="section container">
+  <h4 class="section-title purple-text">My Saved Songs</h4>
+
+  <section id="songs-summary" class="section container center-align">
+    <h4 class="purple-text">Your Songs Overview</h4>
+    <p id="songs-total" class="flow-text black-text"></p>
+    <p id="songs-message" class="grey-text"></p>
+  </section>
+  
+  <!-- The songs will be inserted here by JS -->
+  <div id="saved-songs-list"></div>
+
+  <a href="../index.html" class="waves-effect waves-light btn purple">Back Home</a>
+</section>
+
+
+       
+</div>
+    <script type="text/javascript" src="../js/materialize.min.js"></script>
+    <script src="../js/ui.js"></script>
+
+   
+</body>
+</html>

@@ -1,0 +1,122 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <!-- Link to stylesheet --> 
+        <link rel="stylesheet" href="css/styles.css">
+     <!-- Link to manifest.json --> 
+        <link rel="manifest" href="manifest.json">
+
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Home - Take Note Music App</title>
+    </head>
+
+<body class="grey lighten-4">
+    <div class="app">
+        
+        <meta name="theme-color" content="#6a1b9a"/>
+    </div>
+<div class="practice container grey-text text-darken-4">
+
+   <header>
+<!---Navbar -->
+<nav class="purple darken-3">
+    <div class="nav-wrapper">
+        <a href="#!" class="brand-logo center">
+            <img src="img/MyMusicAppLogo.png" aria-label="Take Note Music Practice App Logo" style="height: 60px;"></a>
+
+            <!-- Nav for large screens -->
+            <a href="#" class="sidenav-trigger white-text" data-target="mobile-demo"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/pages/about.html">About</a></li>
+                <li><a href="/pages/songList.html">Song List</a></li>
+                <li><a href="/pages/savedSongs.html">Saved Songs</a></li>
+                <li><a href="/pages/myStats.html">My Stats</a></li>
+                <li><a href="/pages/contact.html">Contact</a></li>
+            </ul>
+        </div>
+        </nav>  
+
+        <!-- Nav for small and medium screens -->
+        <ul class="sidenav" id="mobile-demo">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/pages/about.html">About</a></li>
+          <li><a href="/pages/songList.html">Song List</a></li>
+          <li><a href="/pages/savedSongs.html">Saved Songs</a></li>
+          <li><a href="/pages/myStats.html">My Stats</a></li>
+          <li><a href="/pages/contact.html">Contact</a></li>
+        </ul>
+          
+    </header>
+
+<!-- Home -->
+
+  <section id="home" class="section container">
+    <h4 class="section-title purple-text">Welcome back! Let's get to work!</h4>
+  <h6 class="black-text">Weekly Goal Progress</h6>
+    <div class="progress purple lighten-4">
+  <div id="progress-bar" class="determinate purple" style="width: 0%"></div>
+    </div>
+    <p id="progress-text" class="grey-text text-darken-2">0 / 300 minutes</p>
+
+    <p>Keep track of your practice sessions here.</p>
+    <form>
+        <div class="input-field">
+            <i class="material-icons prefix purple-text">event</i>
+            <input type="text" class="datepicker" id="practice_date" aria-label="practice_date">
+            <label for="practice_date">Date</label>
+        </div>
+        <div class="input-field">
+            <input id="instrument" type="text" aria-label="Instrument">
+            <label for="instrument">Instrument</label>
+        </div>
+        <div class="input-field">
+            <input id="song" type="text" aria-label="Song">
+            <label for="song">Song</label>
+        </div>
+        <div class="input-field">
+            <input id="minutes" type="number" aria-label="Minutes">
+            <label for="minutes">Minutes Practiced</label>
+        </div>
+        <div class="input-field">
+            <textarea id="notes" class="materialize-textarea" aria-label="notes"></textarea>
+            <label for="notes">Notes</label>
+        </div>
+
+        <!-- Button -->
+        <button id="save-practice-button" type="button" class="waves-effect waves-light btn purple"><i class="material-icons right">double_arrow</i>Save Session</button>
+    </form>
+  </section>  
+
+<section id="dashboard" class="section container center-align">
+  <h4 class="purple-text">Your Music Progress</h4>
+
+  <div class="card hoverable grey lighten-5">
+    <div class="card-content">
+      <p id="total-minutes" class="flow-text black-text"></p>
+      <p id="last-practiced" class="black-text"></p>
+      <p id="longest-session" class="black-text"></p>
+      <p id="days-this-month" class="black-text"></p>
+    </div>
+  </div>
+
+  <div class="progress purple lighten-4">
+    <div id="progress-bar" class="determinate purple darken-2" style="width:0%"></div>
+  </div>
+  <p id="progress-text" class="grey-text"></p>
+</section>
+
+
+       
+</div>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="js/ui.js"></script>
+   
+</body>
+</html>

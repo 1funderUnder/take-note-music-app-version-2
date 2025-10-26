@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Google Icon Font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Materialize CSS -->
+    <link type="text/css" rel="stylesheet" href="../css/materialize.min.css" media="screen,projection"/>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <!-- Manifest -->
+    <link rel="manifest" href="../manifest.json">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="theme-color" content="#6a1b9a"/>
+
+    <title>My Stats - Take Note Music App</title>
+  </head>
+
+  <body class="grey lighten-4">
+    <div class="practice container grey-text text-darken-4">
+
+      <header>
+        <!-- Navbar -->
+        <nav class="purple darken-3">
+          <div class="nav-wrapper container">
+            <!-- Logo -->
+            <a href="../index.html" class="brand-logo center">
+              <img src="../img/MyMusicAppLogo.png"
+                   alt="Take Note Music Practice App Logo"
+                   style="height: 60px;">
+            </a>
+
+            <!-- Hamburger menu for mobile -->
+            <a href="#" class="sidenav-trigger white-text" data-target="mobile-demo">
+              <i class="material-icons">menu</i>
+            </a>
+
+            <!-- Desktop nav -->
+            <ul class="right hide-on-med-and-down">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="songList.html">Song List</a></li>
+              <li><a href="savedSongs.html">Saved Songs</a></li>
+              <li><a href="myStats.html">My Stats</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+
+        <!-- Mobile sidenav -->
+        <ul class="sidenav" id="mobile-demo">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="songList.html">Song List</a></li>
+          <li><a href="savedSongs.html">Saved Songs</a></li>
+          <li><a href="myStats.html">My Stats</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </header>
+
+      <!-- My Stats Section -->
+      <section id="stats" class="section container">
+        <h4 class="section-title purple-text">My Stats</h4>
+        <p class="black-text">
+          Consistency counts! The effort you put in today will build on the musician you become tomorrow.
+          Use this page to track your results and celebrate the time you've invested.
+          Keep moving forward — your instrument awaits!
+        </p>
+
+        <!-- Weekly Progress -->
+        <div class="card hoverable">
+          <div class="card-content">
+            <span class="card-title">Weekly Goal Progress</span>
+            <p>Goal: 300 Minutes Per Week</p>
+            <div class="progress purple lighten-4">
+              <!-- ✅ fixed ID name -->
+              <div id="progress-bar" class="determinate purple" style="width: 0%"></div>
+            </div>
+            <p id="progress-text" class="right-align grey-text">0 / 300 minutes</p>
+          </div>
+          <button id="reset-data" class="btn red">Reset Progress</button>
+        </div>
+
+        <!-- Daily Practice Sessions -->
+        <div class="card hoverable">
+          <div class="card-content">
+            <span class="card-title">Daily Practice Log</span>
+            <div id="practice-log">
+              <!-- Practice log table will be injected here by JavaScript -->
+            </div>
+          </div>
+        </div>
+
+        <a href="../index.html" class="waves-effect waves-light btn purple">Back Home</a>
+      </section>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../js/materialize.min.js"></script>
+    <script src="../js/ui.js"></script>
+  </body>
+</html>

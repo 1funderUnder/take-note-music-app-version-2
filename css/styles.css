@@ -1,0 +1,31 @@
+
+body {
+  overscroll-behavior-y: contain;
+}
+
+/* Fade-out animation for deleted songs */
+.song-card {
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.song-card.fade-out {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+/* Pop-in animation when adding songs */
+@keyframes popIn {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.song-card.pop-in {
+  animation: popIn 0.4s ease;
+}
+

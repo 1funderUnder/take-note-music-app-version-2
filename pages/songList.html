@@ -1,0 +1,98 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="/css/materialize.min.css"  media="screen,projection"/>
+
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Song List</title>
+    
+    </head>
+
+
+<body class="grey-text">
+    <div class="app">
+        
+        <meta name="theme-color" content="#6a1b9a"/>
+    </div>
+
+<div class="practice container black-text">
+
+   <header>
+<!---Navbar -->
+<nav class="purple darken-3">
+    <div class="nav-wrapper">
+        <a href="#!" class="brand-logo center">
+            <img src="../img/MyMusicAppLogo.png" aria-label="Take Note Music Practice App Logo" style="height: 60px;"></a>
+
+            <!-- Nav for large screens -->
+            <a href="#" class="sidenav-trigger white-text" data-target="mobile-demo"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="songList.html">Song List</a></li>
+                <li><a href="savedSongs.html">Saved Songs</a></li>
+                <li><a href="myStats.html">My Stats</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        </nav>  
+
+        <!-- Nav for small and medium screens -->
+        <ul class="sidenav" id="mobile-demo">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="songList.html">Song List</a></li>
+          <li><a href="savedSongs.html">Saved Songs</a></li>
+          <li><a href="myStats.html">My Stats</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+          
+    </header>
+        <!-- Song List Section -->
+
+  <section id="song-list" class="section container">
+    <h4 class="section-title purple-text">Add Songs to Your Song List Here</h4>
+    <p class="black-text">Add songs you want to learn here and they will be added to your saved songs list. Once you've mastered a song, you can delete it from your list. Keep adding new songs and keep learning!</p>
+    
+    <!-- Insert New Songs Here -->
+     <div class="card hoverable">
+      <div class="card-content">
+          <h5 class="song-title black-text">Song 1:</h5> 
+           
+          <!-- Song Info -->
+           <div class="input-field">
+            <i class="material-icons prefix purple-text">person</i>
+            <input id="artist_name_1" type="text" class="validate" aria-label="artist_name_1">
+            <label for="artist_name_1">Artist Name</label>
+           </div>
+          
+           <div class="input-field">
+            <i class="material-icons prefix purple-text">lyrics</i>
+            <input id="song_title_1" type="text" class="validate" aria-label="song_title_1">
+            <label for="song_title_1">Song Title</label>
+           </div>  
+   </div>
+   
+    <!-- Button to add the song -->
+       <div class="card-action right-align">
+        <button id="add-song-btn" class="waves-effect waves-light btn purple">
+          <i class="material-icons right">add</i>Add Song</button>
+    
+      </div>
+  </div>
+
+ <a href="../index.html" class="waves-effect waves-light btn purple">Back Home</a>
+</section>
+ 
+  
+     
+    <script type="text/javascript" src="../js/materialize.min.js"></script>
+    <script src="../js/ui.js"></script>
+   
+</body>
+</html>

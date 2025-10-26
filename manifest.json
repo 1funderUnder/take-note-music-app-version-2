@@ -1,0 +1,55 @@
+{
+  "id": "/?source=pwa",
+  "name": "Take Note Music Practice App",
+  "short_name": "Take Note",
+  "scope": "/",
+  "start_url": "/index.html",
+  "description": "Track your music practice sessions with this PWA featuring practice notes, progress logs, and saved song lists.",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#6a1b9a",
+  "categories": ["music", "entertainment", "education", "productivity"],
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "/img/MyMusicAppLogo192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/img/MyMusicAppLogo512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "screenshots": [
+    { 
+      "src":"/img/screenshots/home-screen.jpg",
+      "sizes": "1080x2341",
+      "type": "image/jpg",
+      "form_factor": "narrow",
+      "label": "Home screen showing practice recap."
+    },
+   { 
+      "src":"/img/screenshots/mystats-screen.jpg",
+      "sizes": "1080x2341",
+      "type": "image/jpg",
+      "form_factor": "narrow",
+      "label": "myStats page showing practice progress."
+    },
+    { 
+      "src":"/img/screenshots/saved-songs.jpg",
+      "sizes": "1080x2341",
+      "type": "image/jpg",
+      "form_factor": "narrow",
+      "label": "Saved songs page showing songs you have saved."
+    },
+    { 
+      "src":"/img/screenshots/home-screen-wide.jpg",
+      "sizes": "1920x3269",
+      "type": "image/jpg",
+      "form_factor": "wide",
+      "label": "Home screen showing practice recap."
+    }
+  ]
+}
