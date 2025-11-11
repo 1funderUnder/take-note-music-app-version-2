@@ -29,3 +29,6 @@ body {
   animation: popIn 0.4s ease;
 }
 
+.spinner-takenote-only {
+  border-color: #6a1b9a !important;
+}
