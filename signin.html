@@ -1,0 +1,106 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <!-- Link to stylesheet --> 
+        <link rel="stylesheet" href="css/styles.css">
+     <!-- Link to manifest.json --> 
+        <link rel="manifest" href="manifest.json">
+
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Sign In - Take Note Music App</title>
+    </head>
+<body class="grey lighten-4">
+    <div class="auth-container">
+        <!-- Sign In Form -->
+         <div id="sign-in-form" class="card auth-card">
+            <div class="auth-header">
+                <img src="img/MyMusicAppLogo.png" alt="Take Note Logo">
+                <h4 class="purple-text text-darken-3">Welcome Back!</h4>
+                <p class="grey-text">Sign in to continue practicing</p>
+            </div>
+            <form class="auth-form" onsubmit="return false;">
+                <div class="input-field">
+                    <i class="material-icons prefix purple-text">email</i>
+                    <input id="sign-in-email" type="email" class="validate">
+                    <label for="sign-in-email">Email</label>
+                    <span class="helper-text" data-error="Please enter a valid email"></span>
+                </div>
+
+                <div class="input-field password-field">
+                    <i class="material-icons prefix purple-text">lock</i>
+                    <input id="sign-in-password" type="password" class="validate">
+                    <label for="sign-in-password">Password</label>
+                    <i class="material-icons toggle-password" onclick="togglePassword('sign-in-password', this)">visibility_off</i>
+                </div>
+
+                <button id="sign-in-btn" class="btn waves-effect waves-light purple darken-2 btn-large" style="width: 100%; margin-top: 2-px;">
+                    <i class="material-icons left">login</i>Sign In
+                </button>
+                <div class="switch-form">
+                    <p>Don't have an account yet? <a id="show-signup">Sign Up</a></p>
+
+                </div>
+            </form>
+        </div>
+         
+
+<!--- Sign Up Form -->
+<div id="sign-up-form" class="card auth-card" style="display: none;">
+    <div class="auth-header">
+        <img src="img/MyMusicAppLogo.png" alt="Take Note Logo">
+        <h4 class="purple-text text-darken-3">Create Account</h4>
+        <p class="grey-text">Start tracking your progress now</p>
+    </div>
+
+    <form class="auth-form" onsubmit="return false;">
+        <div class="input-field">
+            <i class="material-icons prefix purple-text">person</i>
+            <input id="sign-up-name" type="text" class="validate">
+            <label for="sign-up-name">Full Name</label>
+        </div>
+
+        <div class="input-field">
+            <i class="material-icons prefix purple-text">email</i>
+            <input id="sign-up-email" type="email" class="validate">
+            <label for="sign-up-email">Email</label>
+            <span class="helper-text" data-error="Please enter a valid email"></span>
+        </div>
+
+        <div class="input-field password-field">
+         <i class="material-icons prefix purple-text">lock</i> 
+         <input id="sign-up-password" type="password" class="validate" minlength="6">
+         <label for="sign-up-password">Password (min of 6 characters)</label>  
+         <i class="material-icons toggle-password" onclick="togglePassword('sign-up-password', this)">visibility_off</i>
+        </div>
+
+        <div class="input-field password-field">
+         <i class="material-icons prefix purple-text">lock_outline</i> 
+         <input id="sign-up-confirm-password" type="password" class="validate">
+         <label for="sign-up-confirm-password">Confirm Password</label>  
+         <i class="material-icons toggle-password" onclick="togglePassword('sign-up-confirm-password', this)">visibility_off</i>
+        </div>
+
+        <button id="sign-up-btn" class="btn waves-effect waves-light purple darken-2 btn-large" style="width: 100%; margin-top: 20px;">
+            <i class="material-icons left">person_add</i>Create Account
+        </button>
+        <div class="switch-form">
+            <p>Already have an account? <a id="show-signin">Sign In</a></p>
+        </div>
+    </form>
+</div>
+</div>
+
+
+<!-- Materialize JS -->
+<script type="text/javascript" src="js/materialize.min.js"></script>
+
+   <!-- Auth Script -->
+   <script type="module" src="js/signin.js"></script>
+</body>
+</html>

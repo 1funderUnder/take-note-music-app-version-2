@@ -54,6 +54,9 @@ Delete: Delete saved songs
 Go to the Saved Songs page. Click the delete button on the song you want to delete. You will see a "Song removed" message.
 If online, the app removes the collection from Firebase immediately and it is removed from IndexedDB on the next sync when the connection is restored.
 
+Authentication: 
+Added user registration and security rules to ensure users only see their data.
+
 
 
 

@@ -1,9 +1,10 @@
-const CACHE_NAME = "take-note-v51"; 
+const CACHE_NAME = "take-note-v56"; 
 
 // Static assets to cache
 const ASSETS_TO_CACHE = [
   "/",
   "/index.html",
+  "/signin.html",
   "/pages/about.html",
   "/pages/contact.html",
   "/pages/songList.html",
